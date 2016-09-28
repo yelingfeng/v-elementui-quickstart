@@ -1,7 +1,7 @@
 {
     "presets": [
         "es2015",
-        'stage-0'
+        "stage-0"
     ],
     "plugins": [
         [
@@ -9,6 +9,7 @@
                 "libraryName": "element-ui",
                 "styleLibraryName": "theme-default"
             }]
-        ]
+        ],
+        "transform-vue-jsx"
     ]
 }

@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './App.jsx'
 import store from "./store"
 import router from "./router"
 import Element from 'element-ui'
@@ -17,7 +17,8 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 new Vue({
+    el: "#app",
     store,
     router,
     render: h => h(App)
-}).$mount("#app")
+})

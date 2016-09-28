@@ -17,7 +17,7 @@ module.exports = {
         filename: '[hash:8].[name].js',
     },
     resolve: {
-        extensions: ['.js', '.vue'],
+        extensions: ['.js', '.vue', '.jsx'],
         alias: {
             src: path.resolve(__dirname, '../src'),
             components: path.resolve(__dirname, '../src/components'),
@@ -31,7 +31,7 @@ module.exports = {
                 loader: 'vue'
             },
             {
-                test: /\.js$/,
+                test: /\.js?x$/,
                 loader: 'babel',
                 include: projectRoot,
                 exclude: /node_modules/
