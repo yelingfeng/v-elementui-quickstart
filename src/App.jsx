@@ -14,7 +14,7 @@ export default {
                 <div class="header-wapper">
                     <header class="header header-fixed">
                         <div class="container">
-                            <h1><a href="javascript:l">ElementUI-QuickStart</a></h1>
+                            <h1><a href="javascript:;">ElementUI-QuickStart</a></h1>
                             <ul class="nav">
                                 {
                                     this.itemData.map((item) => {
@@ -33,13 +33,9 @@ export default {
                 </div>
                 <div class="main-center">
                     <div class="page-container">
-                        <div class="el-row">
-                            <div class="el-col-24">
-                                <transition name="fade" mode="out-in">
-                                    <router-view class="view"></router-view>
-                                </transition>
-                            </div>
-                        </div>
+                        <transition name="fade" mode="out-in">
+                            <router-view class="view"></router-view>
+                        </transition>
                     </div>
                 </div>
             </div >

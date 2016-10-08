@@ -53,13 +53,6 @@ var webpackConfig = merge(baseWebpackConfig, {
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
             minChunks: Infinity
-        }),
-
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            moment: "moment",
-            "window.jQuery": "jquery"
         })
     ]
 })

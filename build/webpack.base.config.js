@@ -31,9 +31,8 @@ module.exports = {
                 loader: 'vue'
             },
             {
-                test: /\.js?x$/,
+                test: /\.js|\.jsx$/,
                 loader: 'babel',
-                include: projectRoot,
                 exclude: /node_modules/
             },
             {

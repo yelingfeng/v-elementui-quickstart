@@ -5,11 +5,11 @@
   "author": "yelingfeng <yelingfeng521@gmail.com>",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --port=8100 --config ./build/webpack.dev.config.js",
-    "build": "rimraf static && cross-env NODE_ENV=production webpack  --progress --hide-modules --config ./build/webpack.prod.config.js",
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack  --progress --hide-modules --config ./build/webpack.prod.config.js",
     "api-server": "node server.js"
   },
   "dependencies": {
-    "element-ui": "^1.0.0-rc.4",
+    "element-ui": "^1.0.0-rc.5",
     "lodash": "^4.15.0",
     "moment": "^2.14.1",
     "vue": "^2.0.0-rc.4",
